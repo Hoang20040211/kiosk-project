@@ -1,0 +1,66 @@
+<!-- step3.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step 3 - In phiếu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .print-box {
+      background: #fff;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      max-width: 500px;
+    }
+    .info-line {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+    .qr-placeholder {
+      display: inline-block;
+      background: #eee;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 10px;
+      font-size: 14px;
+      font-family: monospace;
+    }
+    .btn.primary {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Bước 3: In phiếu khám</h2>
+    <div class="step-indicator">
+      <div class="step">1</div>
+      <div class="step">2</div>
+      <div class="step active">3</div>
+    </div>
+
+    <div id="print-area" class="print-box">
+      <h3>Thông tin bệnh nhân</h3>
+      <div class="info-line"><strong>Họ tên:</strong> Nguyễn Văn A</div>
+      <div class="info-line"><strong>Phòng khám:</strong> Nội tổng hợp</div>
+      <div class="info-line"><strong>Dịch vụ:</strong> Khám tổng quát, Siêu âm</div>
+      <div class="info-line"><strong>Số thứ tự:</strong> 123</div>
+      <div class="info-line"><strong>Mã QR:</strong> <span class="qr-placeholder">[QR Placeholder]</span></div>
+    </div>
+
+    <div class="form-group">
+      <button onclick="window.print()" class="btn primary">🖨️ In Phiếu</button>
+    </div>
+  </div>
+  <script src="js/step3.js"></script>
+</body>
+</html>
